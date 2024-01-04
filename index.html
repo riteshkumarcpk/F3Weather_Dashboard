@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="stylee.css">
-    <link rel="stylesheet" href="mediaquery.css">
-    <link rel="icon" href="./assets/a41d84a485d960a7d929fd95ece1acf1-weather-stroke-icon.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
-<body>
-    
-    <div id="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D-Weather Dashbord app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div id="conatiner-main">
+      <div id="form_heading">
+        <h1>Weather Cities Project</h1>
+        <form>
+          <div id="SearchBox">
+            <span class="material-icons"> search </span>
+            <input
+              type="text"
+              placeholder="Search for a city or airport"
+              name="input_city"
+              id="input_city" />
+          </div>
 
-        <div id="heading"><h1>Weather Cities Project</h1></div>
-        <div id="form-container">
-            <div>
-                <form action="#" id="form">
-                    <input type="text" name="cityName" placeholder="Search for a city">
-                    <button id="add-btn">Add City</button>
-                </form>
-            </div>
-        </div>
+          <button>Add City</button>
+        </form>
+      </div>
 
-        <div id="city-weather-container">
-            
-        </div>
+      <div id="weatherInfoConatiner"></div>
     </div>
-    
-    <script src="./weather.js"></script>
-</body>
+
+    <script
+      src="https://kit.fontawesome.com/0b381e01ab.js"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
